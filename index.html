@@ -69,7 +69,7 @@
                 <div class="col-lg-6 col-md-6 col-12 mt-2">
                     <div class="card box-info">
                         <div class="card-header">
-                            Informasi CPU
+                            Informasi CPU &amp; GPU
                         </div>
                         <div class="card-body">
                             <p>
@@ -80,13 +80,17 @@
                                 <label for="speed">Base Clocks :</label>
                                 <span id="speed"></span>
                             </p>
+                            <p>
+                                <label for="freem">GPU :</label>
+                                <span id="gpu"></span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="read.js"></script>
+    <script type="module" src="read.js"></script>
     <script>
         var pjson = require('./package.json');
         document.getElementById('version').innerHTML = "Version : "+pjson.version;

@@ -47,4 +47,10 @@ function openTemp(){
     shell.openExternal(dir);
 }
 
-console.log(os.uptime());
+// gpu information
+const gpuTier = require('detect-gpu');
+
+(async() => {
+    var myGpu = await gpuTier.getGPUTier();
+    document.getElementById('gpu').innerHTML = myGpu.gpu.toUpperCase();
+})();
