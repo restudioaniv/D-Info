@@ -88,9 +88,15 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-2 mb-3">
+                <button type="button" class="btn btn-info" onclick="cek_release()">
+                    <span>Cek Update</span>
+                </button>
+            </div>
         </div>
     </div>
     <script type="module" src="read.js"></script>
+    <script src="ext.js"></script>
     <script>
         var pjson = require('./package.json');
         document.getElementById('version').innerHTML = "Version : "+pjson.version;
