@@ -50,6 +50,47 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 mt-2">
+                    <div class="card box-info h-100">
+                        <div class="card-header">
+                            Informasi CPU
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <label for="freem">CPU :</label>
+                                <span id="cpu"></span>
+                            </p>
+                            <p>
+                                <label for="speed">Base Clocks :</label>
+                                <span id="speed"></span>
+                            </p>
+                            <div class="form-group">
+                                <label for="flags">Flags :</label>
+                                <input type="text" name="flags" class="form-control" id="flags" disabled>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <label for="core">Core :</label>
+                                        <input type="text" name="core" class="form-control" id="core" disabled>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <label for="family">Family :</label>
+                                        <input type="text" name="family" class="form-control" id="family" disabled>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <label for="pyshical">Pyshical :</label>
+                                        <input type="text" name="pyshical" class="form-control" id="pyshical" disabled>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <label for="stepping">Stepping :</label>
+                                        <input type="text" name="stepping" class="form-control" id="stepping" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mt-2">
                     <div class="card box-info">
                         <div class="card-header">
                             Informasi RAM
@@ -69,21 +110,60 @@
                 <div class="col-lg-6 col-md-6 col-12 mt-2">
                     <div class="card box-info">
                         <div class="card-header">
-                            Informasi CPU &amp; GPU
+                            Informasi Graphic Cards
                         </div>
                         <div class="card-body">
-                            <p>
-                                <label for="freem">CPU :</label>
-                                <span id="cpu"></span>
-                            </p>
-                            <p>
-                                <label for="speed">Base Clocks :</label>
-                                <span id="speed"></span>
-                            </p>
-                            <p>
-                                <label for="freem">GPU :</label>
-                                <span id="gpu"></span>
-                            </p>
+                            <div class="form-group">
+                                <label for="vendor">Model :</label>
+                                <input type="text" name="vendor" class="form-control" id="vendor" disabled>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="vram">VRAM :</label>
+                                            <input type="text" name="vram" class="form-control" id="vram" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="vdriver">Driver Version :</label>
+                                            <input type="text" name="vdriver" class="form-control" id="vdriver" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            Informasi Display
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="tipe">Tipe Layar :</label>
+                                <input type="text" name="tipe" class="form-control" id="tipe" disabled>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="form-group">
+                                            <label for="resolusi">Resolusi Layar :</label>
+                                            <input type="text" name="resolusi" class="form-control" id="resolusi" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="form-group">
+                                            <label for="refresh">Refresh Rate :</label>
+                                            <input type="text" name="refresh" class="form-control" id="refresh" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="form-group">
+                                            <label for="koneksi">Tipe Koneksi :</label>
+                                            <input type="text" name="koneksi" class="form-control" id="koneksi" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
