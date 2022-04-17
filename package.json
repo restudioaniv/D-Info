@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build-win64": "electron-builder --win --x64"
+    "build-win64": "electron-builder --win --x64",
+    "build-win32": "electron-builder --windows nsis:ia32"
   },
   "build": {
     "appId": "my.id.restudio.dinfo",
