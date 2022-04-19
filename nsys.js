@@ -20,8 +20,9 @@ si.cpu().then(data => {
 
 // Graphic Card Information
 si.graphics().then(data => {
+  console.log(data);
   // gpu
-  document.getElementById('vendor').value = data.controllers[0].name,
+  document.getElementById('vendor').value = data.controllers[0].model,
   document.getElementById('vram').value = data.controllers[0].vram/1024+" GB",
   document.getElementById('vdriver').value = data.controllers[0].driverVersion
   // display
