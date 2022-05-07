@@ -2,6 +2,7 @@
   "name": "d-info",
   "productName": "D-Info",
   "version": "1.0.0",
+  "description": "Aplikasi informasi device Windows Free",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -13,17 +14,23 @@
     "productName": "D-Info",
     "win": {
       "target": [
-        "nsis"
+        "nsis","appx"
       ],
       "icon": "build/favicon.ico"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
+    },
+    "appx": {
+      "publisher": "CN=B5C0E522-DA44-46AB-AD7A-3861F629EE23",
+      "identityName":"35602Re.Studio.FormDev",
+      "applicationId": "Re.Studio.FormDev",
+      "backgroundColor": "transparent"
     }
   },
   "keywords": [],
-  "author": "",
+  "author": "Re.Studio",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
